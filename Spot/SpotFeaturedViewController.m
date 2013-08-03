@@ -1,18 +1,18 @@
 //
-//  SpotSecondViewController.m
+//  SpotFirstViewController.m
 //  Spot
 //
 //  Created by John Lemay on 7/17/13.
 //  Copyright (c) 2013 John Lemay. All rights reserved.
 //
 
-#import "SpotSecondViewController.h"
+#import "SpotFeaturedViewController.h"
 
-@interface SpotSecondViewController ()
+@interface SpotFeaturedViewController ()
 
 @end
 
-@implementation SpotSecondViewController
+@implementation SpotFeaturedViewController
 
 - (void)viewDidLoad
 {
