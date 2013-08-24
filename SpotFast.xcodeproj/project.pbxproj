@@ -29,17 +29,18 @@
 		3AA65BE2179C1D1C00A4DFC1 /* FeatureCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA65BE1179C1D1C00A4DFC1 /* FeatureCategoryVC.m */; };
 		3AA65BE5179C1F9C00A4DFC1 /* FeatureCategoryVCSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA65BE4179C1F9C00A4DFC1 /* FeatureCategoryVCSubClass.m */; };
 		3AA65BE817A0785100A4DFC1 /* FeatureCategoryPhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA65BE717A0785100A4DFC1 /* FeatureCategoryPhotosVC.m */; };
+		3ABDE39817BA79C500D3E129 /* PhotoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDE39717BA79C500D3E129 /* PhotoCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3AA65B981796EB0800A4DFC1 /* Spot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA65B981796EB0800A4DFC1 /* SpotFast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotFast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA65B9B1796EB0800A4DFC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3AA65B9D1796EB0800A4DFC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AA65B9F1796EB0800A4DFC1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3AA65BA31796EB0800A4DFC1 /* Spot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spot-Info.plist"; sourceTree = "<group>"; };
+		3AA65BA31796EB0800A4DFC1 /* SpotFast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpotFast-Info.plist"; sourceTree = "<group>"; };
 		3AA65BA51796EB0800A4DFC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3AA65BA71796EB0800A4DFC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3AA65BA91796EB0800A4DFC1 /* Spot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spot-Prefix.pch"; sourceTree = "<group>"; };
+		3AA65BA91796EB0800A4DFC1 /* SpotFast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotFast-Prefix.pch"; sourceTree = "<group>"; };
 		3AA65BAA1796EB0800A4DFC1 /* SpotAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotAppDelegate.h; sourceTree = "<group>"; };
 		3AA65BAB1796EB0800A4DFC1 /* SpotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotAppDelegate.m; sourceTree = "<group>"; };
 		3AA65BAD1796EB0800A4DFC1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -67,6 +68,8 @@
 		3AA65BE4179C1F9C00A4DFC1 /* FeatureCategoryVCSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureCategoryVCSubClass.m; sourceTree = "<group>"; };
 		3AA65BE617A0785000A4DFC1 /* FeatureCategoryPhotosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureCategoryPhotosVC.h; sourceTree = "<group>"; };
 		3AA65BE717A0785100A4DFC1 /* FeatureCategoryPhotosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureCategoryPhotosVC.m; sourceTree = "<group>"; };
+		3ABDE39617BA79C500D3E129 /* PhotoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCache.h; sourceTree = "<group>"; };
+		3ABDE39717BA79C500D3E129 /* PhotoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +98,7 @@
 		3AA65B991796EB0800A4DFC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AA65B981796EB0800A4DFC1 /* Spot.app */,
+				3AA65B981796EB0800A4DFC1 /* SpotFast.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +129,8 @@
 				3AA65BD617987BC600A4DFC1 /* ImageViewController.m */,
 				3AA65BB91796EB0800A4DFC1 /* first.png */,
 				3AA65BBB1796EB0800A4DFC1 /* first@2x.png */,
+				3ABDE39617BA79C500D3E129 /* PhotoCache.h */,
+				3ABDE39717BA79C500D3E129 /* PhotoCache.m */,
 				3AA65BE617A0785000A4DFC1 /* FeatureCategoryPhotosVC.h */,
 				3AA65BE717A0785100A4DFC1 /* FeatureCategoryPhotosVC.m */,
 				3AA65BBD1796EB0800A4DFC1 /* SpotRecentViewController.h */,
@@ -143,10 +148,10 @@
 		3AA65BA21796EB0800A4DFC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3AA65BA31796EB0800A4DFC1 /* Spot-Info.plist */,
+				3AA65BA31796EB0800A4DFC1 /* SpotFast-Info.plist */,
 				3AA65BA41796EB0800A4DFC1 /* InfoPlist.strings */,
 				3AA65BA71796EB0800A4DFC1 /* main.m */,
-				3AA65BA91796EB0800A4DFC1 /* Spot-Prefix.pch */,
+				3AA65BA91796EB0800A4DFC1 /* SpotFast-Prefix.pch */,
 				3AA65BAD1796EB0800A4DFC1 /* Default.png */,
 				3AA65BAF1796EB0800A4DFC1 /* Default@2x.png */,
 				3AA65BB11796EB0800A4DFC1 /* Default-568h@2x.png */,
@@ -167,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3AA65B971796EB0800A4DFC1 /* Spot */ = {
+		3AA65B971796EB0800A4DFC1 /* SpotFast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3AA65BC61796EB0800A4DFC1 /* Build configuration list for PBXNativeTarget "Spot" */;
+			buildConfigurationList = 3AA65BC61796EB0800A4DFC1 /* Build configuration list for PBXNativeTarget "SpotFast" */;
 			buildPhases = (
 				3AA65B941796EB0800A4DFC1 /* Sources */,
 				3AA65B951796EB0800A4DFC1 /* Frameworks */,
@@ -179,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = Spot;
+			name = SpotFast;
 			productName = Spot;
-			productReference = 3AA65B981796EB0800A4DFC1 /* Spot.app */;
+			productReference = 3AA65B981796EB0800A4DFC1 /* SpotFast.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +199,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "John Lemay";
 			};
-			buildConfigurationList = 3AA65B931796EB0800A4DFC1 /* Build configuration list for PBXProject "Spot" */;
+			buildConfigurationList = 3AA65B931796EB0800A4DFC1 /* Build configuration list for PBXProject "SpotFast" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -206,7 +211,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AA65B971796EB0800A4DFC1 /* Spot */,
+				3AA65B971796EB0800A4DFC1 /* SpotFast */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +250,7 @@
 				3AA65BE2179C1D1C00A4DFC1 /* FeatureCategoryVC.m in Sources */,
 				3AA65BE5179C1F9C00A4DFC1 /* FeatureCategoryVCSubClass.m in Sources */,
 				3AA65BE817A0785100A4DFC1 /* FeatureCategoryPhotosVC.m in Sources */,
+				3ABDE39817BA79C500D3E129 /* PhotoCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,9 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Spot/Spot-Prefix.pch";
-				INFOPLIST_FILE = "Spot/Spot-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Spot/SpotFast-Prefix.pch";
+				INFOPLIST_FILE = "Spot/SpotFast-Info.plist";
+				PRODUCT_NAME = SpotFast;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -341,9 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Spot/Spot-Prefix.pch";
-				INFOPLIST_FILE = "Spot/Spot-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Spot/SpotFast-Prefix.pch";
+				INFOPLIST_FILE = "Spot/SpotFast-Info.plist";
+				PRODUCT_NAME = SpotFast;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -351,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3AA65B931796EB0800A4DFC1 /* Build configuration list for PBXProject "Spot" */ = {
+		3AA65B931796EB0800A4DFC1 /* Build configuration list for PBXProject "SpotFast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AA65BC41796EB0800A4DFC1 /* Debug */,
@@ -360,13 +366,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AA65BC61796EB0800A4DFC1 /* Build configuration list for PBXNativeTarget "Spot" */ = {
+		3AA65BC61796EB0800A4DFC1 /* Build configuration list for PBXNativeTarget "SpotFast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AA65BC71796EB0800A4DFC1 /* Debug */,
 				3AA65BC81796EB0800A4DFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

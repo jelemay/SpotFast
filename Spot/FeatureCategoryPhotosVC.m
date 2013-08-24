@@ -8,6 +8,7 @@
 
 #import "FeatureCategoryPhotosVC.h"
 #import "FlickrFetcher.h"
+#import "PhotoCache.h"
 
 @interface FeatureCategoryPhotosVC ()
 
@@ -63,6 +64,18 @@
                 {
                     //   NSLog(@"found selector");
                     NSURL *url = [FlickrFetcher urlForPhoto:self.photos[indexPath.row] format:FlickrPhotoFormatLarge];
+                    
+                    
+                    PhotoCache *cache  = [[PhotoCache alloc] init];
+                    [cache createFilesystem];
+                
+               //     NSLog(@"string for URL   %@",[url absoluteString]);
+               //     NSArray * stringItems= [[url absoluteString] componentsSeparatedByString:@"/"];
+                    
+                //    NSLog(@"string for URL segmented   %@",stringItems);
+                //    NSLog(@"string for URL segmented   %@",[stringItems lastObject]);
+                    
+                    
                     [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
                     [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
                     
