@@ -7,51 +7,65 @@
 //
 
 #import "PhotoCache.h"
+@interface PhotoCache()
+@property(strong , nonatomic) NSString * cacheDirectory;
+@property(strong,nonatomic) NSString * photoCache;
+@property (strong ,nonatomic)   NSFileManager * manager;
+
+@end
 
 @implementation PhotoCache
 
-
-
-
--(void) createFilesystem
-
-{
-    NSFileManager * manager = [NSFileManager defaultManager];
-    NSString * home = NSHomeDirectory();
-     NSLog(@"home directory NSString   %@",home);
-    NSString * cacheDirectory = [home stringByAppendingString:@"/Library/Caches" ];
-    NSLog(@"cache directory %@" ,cacheDirectory);
-    BOOL  dirFound =[manager fileExistsAtPath: cacheDirectory];
-    if(dirFound  == YES){
+- (id)init{
+    self=[super init];
+    if(self)
+    {
+        NSFileManager * manager = [NSFileManager defaultManager];
+        NSString * home = NSHomeDirectory();
+        NSLog(@"home directory NSString   %@",home);
+        _cacheDirectory = [home stringByAppendingString:@"/Library/Caches" ];
+        _photoCache = [home stringByAppendingString:@"/Library/Caches/PhotoCache/" ];
+        
+        BOOL  dirFound =[manager fileExistsAtPath: _cacheDirectory];
+        if(dirFound  == YES)
+        {
+            BOOL directoryCreated = [manager createDirectoryAtPath:_photoCache withIntermediateDirectories:YES attributes:nil error:nil];
+            
+            if(directoryCreated  == YES){
+                NSLog(@" photo directory created");
+            }
+            else{
+                NSLog(@" photo directory not created ");
+            }
+            
             NSLog(@"directory found");
+        }
+        else{
+            NSLog(@" cache directory not found ");
+        }
+        
     }
-    else{
-          NSLog(@"directory not found ");
-    }
-    NSArray * cacheContents=[manager contentsOfDirectoryAtPath:cacheDirectory error:nil];
-    NSLog(@"cache directory size %d" ,[cacheContents count]);
-    
-      NSString * photoCache = [home stringByAppendingString:@"/Library/Caches/PhotoCache/" ];
-    BOOL directoryCreated = [manager createDirectoryAtPath:photoCache withIntermediateDirectories:NO attributes:nil error:nil];
-    
-    if(directoryCreated  == YES){
-        NSLog(@" phot directory created");
-    }
-    else{
-        NSLog(@" photo directory not created ");
-    }
-    
-    
-    
-    
-    NSArray * photoCacheContents=[manager contentsOfDirectoryAtPath:photoCache error:nil];
-    NSLog(@"photoCache directory size %d" ,[photoCacheContents count]);
-
+    return self;
 }
--(BOOL)fileSystemExists
+
+
+
+-(BOOL)cacheFileSystemExists
 {
+    BOOL  dirFound =[self.manager fileExistsAtPath: self.cacheDirectory];
+    if(dirFound  == YES)
+    {
     return true;
+    }
+    return false;
 };
+- (int) cacheSize
+{
+    
+    NSArray * photoCacheContents=[self.manager contentsOfDirectoryAtPath:self.photoCache error:nil];
+    return [photoCacheContents count];
+}
+
 
 - (void) addFile:(NSURL *) file
 {

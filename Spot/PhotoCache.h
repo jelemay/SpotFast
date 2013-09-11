@@ -10,13 +10,15 @@
 
 @interface PhotoCache : NSObject
 
--(void) createFilesystem;
 
--(BOOL)fileSystemExists;
+
+-(BOOL) cacheFileSystemExists;
 
 - (void) addFile:(NSURL *) file;
 
 - (void) deletOldestFile;
+
+- (int) cacheSize;
 
 - (BOOL) fileExist:(NSURL *) file;
 

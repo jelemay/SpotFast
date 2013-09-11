@@ -67,7 +67,8 @@
                     
                     
                     PhotoCache *cache  = [[PhotoCache alloc] init];
-                    [cache createFilesystem];
+                    NSLog(@" phots in cache,%d ",[cache cacheSize]);
+                  //  [cache createFilesystem];
                 
                //     NSLog(@"string for URL   %@",[url absoluteString]);
                //     NSArray * stringItems= [[url absoluteString] componentsSeparatedByString:@"/"];
